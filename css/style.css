@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+a, a:hover, a:visited, a:active {
+color: inherit;
+text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Ubuntu', arial;
+    /* font-family: 'Kreon'; */
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.nav-container{
+    background: #00171F;
+}
+
+.nav-container a{
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    font-family: 'Kreon';
+}
+
+header .home{
+    color: #5CBDF3;
+    font-weight: bold;
+}
+
+header ul{
+    display: flex;
+}
+
+header a{
+    display: block;
+    padding: 0 1em;
+}
+
+.social-header, .hero-design{
+    display: none;
+}
+
+.hero{
+    background: #003459;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+}
+
+.hero .button {
+    background-color: #D9D9D9;
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+section{
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.featured{
+    position: relative;
+}
+
+.featured::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:#93D8FF;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.subtitle{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #00A8E8;
+    letter-spacing: .2em;
+    font-size: 1.5em;
+}
+
+.featured-title{
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    /* margin-top: -.4em; */
+    display: block;
+}
+
+.featured-desc{
+    color: #212121;
+    margin-bottom: 3em;
+    font-size: 1.3vw;
+    line-height: 1.8em;
+    font-weight: 400;
+}
+
+.portfolio-container img{
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+.skills{
+    background: #00A8E8;
+}
+
+.skills-container ul li{
+    background: white;
+    padding: 2em;
+    border: 1em;
+    margin-bottom: 1em;
+    border-radius: 15px;
+}
+
+.icon-container{
+    height: 100px;
+    display: grid;
+    place-content: center;
+    margin-bottom: 2em;
+}
+
+.skill-title{
+    font-weight: bold;
+}
+
+.skill-container .featured-desc{
+    margin-bottom: 2em;
+}
+
+.biodata-right{
+    margin-top: 1em;
+    /* background-color: #0f3149; */
+    /* text-align: center; */
+    font-weight:500;
+    font-size: .9em;
+}
+
+.imgcss{
+    border-radius: 15px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.future-goal{
+    background-color: #0f3149;
+}
+.future-goal-desc{
+    color: white;
+    font-family: 'Kreon';
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 800px){
+    .featured, .portfolio{
+        text-align: left;
+    }
+
+    .featured, .portfolio-container{
+        display: grid;
+        grid-template-columns: 40% auto; 
+    }
+
+    .portfolio-left{
+        display: grid;
+        place-content: center;
+    }
+
+    .right{
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+
+    .skills{
+        margin-top: -7em;
+        margin-bottom: -8em;
+        padding-top: 5em;
+    }
+    
+    .skills-container ul{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+    }
+
+    .biodata-container{
+        display: grid;
+        grid-template-columns: 40% auto; 
+    }
+
+    .biodata{
+        padding-top: 10em;
+    }
+
+    .biodata-right{
+        margin-left: 2em;
+        font-size: 2vw;
+        font-weight: 400;
+        display: grid;
+        place-content: center;
+        padding-bottom: 2em;
+    }
+}
